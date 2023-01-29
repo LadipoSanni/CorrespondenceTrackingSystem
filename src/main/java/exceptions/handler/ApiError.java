@@ -1,6 +1,5 @@
 package exceptions.handler;
 
-import jakarta.servlet.http.HttpServletRequest;
 import lombok.Builder;
 import lombok.Data;
 
@@ -14,11 +13,12 @@ public class ApiError {
     private String message;
     private String path;
 
-    public ApiError(LocalDateTime timeStamp) {
-        this.timeStamp = LocalDateTime.now();
-    }
     @Builder
-    public ApiError(HttpServletRequest request) {
-        this.path = request.getContextPath();
+    public ApiError(LocalDateTime timeStamp, String status, String message, String request) {
+        LocalDateTime.now();
+        this.status = status;
+        this.message = message;
+        this.path = request;
     }
 }
+

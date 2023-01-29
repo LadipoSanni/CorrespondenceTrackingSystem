@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CoTraSApplication {
+public class CoTrakSApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CoTraSApplication.class, args);
+        SpringApplication.run(CoTrakSApplication.class, args);
     }
 
 }
