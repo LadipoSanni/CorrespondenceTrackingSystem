@@ -1,4 +1,4 @@
-package user.userManagementService;
+package user.userService;
 
 
 import exceptions.classs.CtsException;

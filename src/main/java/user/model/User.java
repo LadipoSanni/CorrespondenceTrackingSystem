@@ -2,6 +2,7 @@ package user.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -13,6 +14,7 @@ import java.util.Set;
     @RequiredArgsConstructor
     @AllArgsConstructor
     @MappedSuperclass
+    @Document
     public class User {
         @NonNull
         private String firstName;

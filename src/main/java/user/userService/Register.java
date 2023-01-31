@@ -1,4 +1,4 @@
-package user.userManagementService;
+package user.userService;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
